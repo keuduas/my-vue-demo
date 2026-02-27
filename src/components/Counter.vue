@@ -20,7 +20,9 @@ const increment = () => {
 }
 
 const decrement = () => {
-  count.value--
+  if (count.value > 0) {
+    count.value--
+  }
 }
 
 const reset = () => {
